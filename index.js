@@ -34,7 +34,7 @@ function regexReplaceLoader(source) {
     result = replace(regex, result, stage)
   })
 
-  return 'module.exports = ' + JSON.stringify(result)
+  return result;
 }
 
 /**
